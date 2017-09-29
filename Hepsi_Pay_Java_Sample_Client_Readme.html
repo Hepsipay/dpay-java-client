@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		<h1 id="hepsi-pay-java-sample-client">Hepsi Pay Java Sample Client</h1>
+		<p>1) First add 
+			<code>hepsipay-java-client-1.1.1.jar</code> file to your local Maven Repo:
+		</p>
+		<pre><code>mvn install:install-file -Dfile=hepsipay-java-client-1.1.1.jar -DgroupId=com.hepsipay.client -DartifactId=hepsipay-java-client -Dversion=1.1.1 -Dpackaging=jar</code></pre>
+		<p>2) Extract 
+			<code>hepsipay-client-sample.zip</code> file 
+		</p>
+		<p>3) Edit file 
+			<code>SampleUtil.java</code> change 
+			<code>SecretKey</code> and 
+			<code>ApiKey</code> text in the 
+			<code>generateSampleHepsiPaySetting()</code> method.
+		</p>
+		<p>Ex:</p>
+		<pre><code>HepsiPaySetting hepsiPaySettings = new HepsiPaySetting();
+hepsiPaySettings.setApiKey("ApiKey");
+hepsiPaySettings.setSecretKey("SecretKey"); 
+hepsiPaySettings.setTestMode(true);</code></pre>
+		<p>4) Open the Test class and run. </p>
+		<p>Ex: 
+			<code>SampleCardQuery.java</code>
+		</p>
+		<h2 id="author">Author</h2>
+		<p>Ahmet Faruk Bişkinler</p>
+		<h2 id="support">Support</h2>
+		<p>PixelTürk Web Studio, 
+
+			<a href="mailto:destek@pixelturk.net">destek@pixelturk.net</a>
+		</p>
+	</body>
+</html>
